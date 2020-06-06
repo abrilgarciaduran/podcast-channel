@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans:100,200,300,400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border: none;
+    text-decoration: none;
+    letter-spacing: 0;
+    box-sizing: content-box;
+    font-weight: normal;
+}
+
+$color-primary: #060A24;
+$color-secondary: #FFFFFF;
+$button-color: #00F3BB;
+
+@mixin hidden {
+    display: none;
+}
+

@@ -1,0 +1,218 @@
+/*Nav bar*/ 
+header {
+    width: 100%;
+    position: absolute;
+    div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav {
+        @include hidden
+    }
+    input {
+        @include hidden;
+        &:checked ~ nav {
+            display: block
+        }
+        &:checked ~ div label i#barras {
+            @include hidden
+        }
+        &:checked ~ div label i#cruz {
+            display: block;
+            transform: translate(-19px);
+        }
+    }
+}
+
+/*Section 1: Home*/
+#home {
+    a {
+        display: inline-block;
+        text-align: center;
+    }
+    div {
+        display: flex;
+        align-items: center;
+    }
+}
+#textdesktop {
+    @include hidden
+}
+
+/*Section 2: Episodios*/
+#episodios {
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    transform: skew(0deg, -6deg);
+}
+.episodioscont {
+    transform: skew(0deg, 6deg);
+}
+
+
+/*section 3: De donde venimos*/
+#dedonde {
+    transform: translate(0px, -120px);   
+}
+
+/*section 4: invitados*/
+#invitados {
+    display: block;
+    div img {
+        width: 100%;
+    }
+}
+
+/*section 5: temas*/
+#contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*section 6: novedades*/
+#novedades {
+    box-sizing: border-box;
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+}
+
+
+/*section 7: footer*/
+footer {
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+
+    /*Nav Bar*/
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        input, div label {
+            @include hidden
+        }
+        div img {
+            transform: translateY(10px);
+        }
+        nav {
+            display: inline-block;
+            ul{
+                display: flex;
+                justify-content: flex-end;
+                li {
+                    display: inline-block;
+                    a:hover {
+                        color: #00F3BB;
+                    }
+                    a:active {
+                        color: rgba(06, 10, 36, 5.6);
+                    }
+                }
+            }
+        }
+    }
+
+    /*Section 1: Home*/
+    #home {
+        padding: 200px 0 80px 13.88vw;
+        div {
+            background: #00F3BB;
+            margin: 0 0 24px 0;
+            width: 226px;
+            height: 56px;
+            &:hover {
+                background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+                a {
+                    color: #FFFFFF;
+                    font-weight: 500;
+                }
+            }
+            a {
+                text-align: center;
+                justify-content: center;
+            }
+        }
+        .dot {
+            color: #0000EC;
+        }
+    }
+    #textdesktop {
+        display: block;
+    }
+    #textmobile {
+        @include hidden
+    }
+
+    /*Section 2: episodios*/
+    #episodios {
+        height: 942.6px;
+        box-sizing: border-box;
+        padding: 0px 28px 0 28px;
+        
+    }
+
+    /*section 3: De donde venimos*/
+    #dedonde {
+        transform: translate(0px, -80px);
+    }
+    #dedondevenimos {
+        transform: translate(0px, -198px);
+    }
+
+    
+
+    /*section 4: invitados*/
+    #invitados {
+        width: 100%;
+        div {
+            width: 100%;
+            img {
+                width: 33.33%;
+                height: 25.27vw;
+            }
+        }
+    }
+
+    /*section 5: temas*/
+    #contenedor {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;    
+    }
+    
+
+    /*section 6: novedades*/
+    #novedades {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%); 
+        transform: translate(0, 34px); 
+        .button:hover {
+            background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+            a {
+                color: #FFFFFF;
+                font-weight: 500;
+            }
+        }
+    }
+
+    /*Section 7: Footer*/
+    footer {
+        display: flex;
+        justify-content: space-between;
+        transform: translate(0, 34px); 
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+    #dedondevenimos {
+        transform: translate(0px, 100px);
+        width: 37.5em;
+    }
+
+}
+
+
