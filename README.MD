@@ -1,7 +1,8 @@
 # Podcast Channel
 
 
-Proyecto realizando en la carrera de desarrollo Web Full Stack en ACAMICA.
+Proyecto realizado en la carrera de desarrollo Web Full Stack en ACAMICA.
+Consiste en una landing page para encontrar y escuchar Podcasts de programación.
 ___________
 
 
