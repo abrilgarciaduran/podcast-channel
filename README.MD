@@ -1,11 +1,11 @@
-**Podcast Channel**
+#Podcast Channel
 
 
 Proyecto realizando en la carrera de desarrollo Web Full Stack en ACAMICA.
 ___________
 
 
-Tencologías y herramientas utilizadas:
+**Tencologías y herramientas utilizadas:**
 
 -HTML
 
